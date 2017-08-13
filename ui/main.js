@@ -1,8 +1,8 @@
 
-button = document.getElementById('b');
+b = document.getElementById('b');
 counter = 0 ;
 
-button.onClick = function()
+b.onclick = function()
 {
   counter = coutner + 1 ;
 };
