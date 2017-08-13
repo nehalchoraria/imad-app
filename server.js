@@ -70,7 +70,7 @@ function htmlbody(data)
 
 app.get('/:articlename' , function(req,res){
     articlename = req.params.articlename;
-    res.send(htmlbody(articles[name]));
+    res.send(htmlbody(articles[articlename]));
 });
 
 
