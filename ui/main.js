@@ -7,10 +7,7 @@ margin = 0 ;
 function Move()
 {
     margin = margin + 10 ; 
-    img.style.marginTop = margin + 'px' ; 
+    img.style.marginLeft = margin + 'px' ; 
 }
 
-img.onclick =  function()
-{
-    setInterval(Move,100) ; 
-};
+img.onclick = setInterval(Move,100) ; 
