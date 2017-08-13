@@ -12,7 +12,7 @@ function MoveRight()
 
 function MoveLeft()
 {
-    margin = margin + 5 ; 
+    margin = margin - 5 ; 
     img.style.marginLeft = margin + 'px' ; 
 }
 
