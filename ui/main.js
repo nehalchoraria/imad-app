@@ -1,10 +1,13 @@
 
 b = document.getElementById('b');
+sp = document.getElementById('span');
+
 counter = 0 ;
 
 b.onclick = function()
 {
-  counter = coutner + 1 ;
+  counter = counter + 1 ;
+  s.innerHTML = counter.toString();
 };
 
 // console.log('Loaded!');
