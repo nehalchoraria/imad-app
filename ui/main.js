@@ -21,8 +21,10 @@ counter = 0;
 img.onclick =  function()
 {
     counter= counter + 1 ; 
+    console.log(counter)
     
-    if (counter%2 == 0)
+    
+    if (counter%2 === 0)
     setInterval(MoveRight,50) ; 
     else
     setInterval(MoveLeft,50) ; 
