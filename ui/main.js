@@ -15,7 +15,7 @@ b.onclick = function()
                 var counter = request.resposneText;
                 sp = document.getElementById('s');
                 console.log(counter)
-                sp.innerHTML = counter.toString();
+                sp.innerHTML = 'hello'
             }
         }
     };
