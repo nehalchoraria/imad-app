@@ -13,7 +13,7 @@ function MoveRight()
 function MoveLeft()
 {
     margin = margin - 5 ;
-    img.style.marginLeft = margin + 'px' ; 
+    img.style.marginRight = margin + 'px' ; 
 }
 
 counter = 0;
@@ -24,8 +24,8 @@ img.onclick =  function()
     console.log(counter)
     
     
-    if (counter%2)
-    setInterval(MoveRight,50) ; 
+    if (counter%2==0)
+    setInterval(MoveRight,100) ; 
     else
     setInterval(MoveLeft,50) ; 
 };
