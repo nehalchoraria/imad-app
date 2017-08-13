@@ -1,6 +1,6 @@
 
 b = document.getElementById('b');
-sp = document.getElementById('span');
+sp = document.getElementById('s');
 
 counter = 0 ;
 
