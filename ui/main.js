@@ -1,8 +1,6 @@
 
 b = document.getElementById('b');
 
-counter = 0 ;
-
 b.onclick = function()
 {
     var request = new XMLHTTPRequest();
