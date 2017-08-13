@@ -9,6 +9,7 @@ b.onclick = function()
     {
         if(request.readystate === XMLHttpRequest.DONE)
         {
+            console.log(request.status.toString())
            if(request.status === 200)
             {
                 coutner = request.resposneText
