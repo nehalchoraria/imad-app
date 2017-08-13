@@ -7,9 +7,9 @@ b.onclick = function()
   
     request.onreadystatechange = function()
     {
+        alert('hi')
         if(request.readystate === XMLHttpRequest.DONE)
         {
-            console.log('in')
             if(request.status === 200)
             {
                 console.log('in')
