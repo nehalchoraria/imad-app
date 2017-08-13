@@ -41,7 +41,7 @@ function htmlbody(data)
     
    html = ` <html>
     <head> 
-        <Title> $title </Title> 
+        <Title> ${title} </Title> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -55,7 +55,7 @@ function htmlbody(data)
         <hr> <br>
         </div>
     
-        <div class = "Container">
+        <div class = "Container" style = " margin : 20px ">
         <h2> ${heading} </h2>
         <p> ${date} </p>
         <p> ${content} </p>
