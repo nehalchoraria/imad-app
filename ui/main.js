@@ -9,10 +9,9 @@ b.onclick = function()
     {
         if(request.readystate === XMLHttpRequest.DONE)
         {
-            console.log(request.readystate.toString())
-            if(request.status === 200)
+           if(request.status === 200)
             {
-                var coutner = request.resposneText
+                coutner = request.resposneText
                 sp = document.getElementById('s');
                 sp.innerHTML = counter.toString();
             }
