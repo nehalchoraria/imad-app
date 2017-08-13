@@ -10,10 +10,24 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var content = { title:'Article One',
+var aritleone = { title:'Article One',
 heading : 'Article One ',
 date : '13 August 2017',
 content : `<p> This is article one. This is article one. This is article one. This is article one. This is article one. This is        article one. This is article one. This is article one. 
+        </p> `
+};
+
+var aritletwo = { title:'Article One',
+heading : 'Article Two ',
+date : '11 August 2017',
+content : `<p> This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. 
+        </p> `
+};
+
+var aritlethree = { title:'Article Three',
+heading : 'Article Three ',
+date : '12 August 2017',
+content : `<p> This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. 
         </p> `
 };
 
@@ -54,7 +68,15 @@ function htmlbody(data)
 
 
 app.get('/article_one' , function(req,res){
-    res.send(htmlbody(content))
+    res.send(htmlbody(articleone))
+});
+
+app.get('/article_two' , function(req,res){
+    res.send(htmlbody(articletwo))
+});
+
+app.get('/article_three' , function(req,res){
+    res.send(htmlbody(articlethree))
 });
 
 app.get('/ui/style.css', function (req, res) {
