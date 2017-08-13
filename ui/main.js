@@ -9,11 +9,14 @@ b.onclick = function()
     
     request.onreadystatechange = function()
     {
-        s = document.getElementById('s');
-                        s.innerHTML = 'hello'
+        
 
-        // if(request.readystate == XMLHttpRequest.DONE)
-        // {
+        if(request.readystate == XMLHttpRequest.DONE)
+        {
+            
+            s = document.getElementById('s');
+                s.innerHTML = 'hello'
+        
         //   if(request.status == 200)
         //     {
         //         var counter = request.resposneText;
@@ -21,7 +24,7 @@ b.onclick = function()
         //         console.log(counter)
         //         s.innerHTML = 'hello'
         //     }
-        // }
+        }
     };
     
 };
