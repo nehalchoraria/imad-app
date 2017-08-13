@@ -7,17 +7,18 @@ b.onclick = function()
   
     request.onreadystatechange = function()
     {
+        if(request.readystate === XMLHttpRequest.DONE)
+        {
         
            if(request.status === 200)
             {
-                counter = request.resposneText
-                alert('ho')
+                var counter = request.resposneText;
                 sp = document.getElementById('s');
                 console.log(counter)
                 sp.innerHTML = counter.toString();
             }
-        
-    }
+        }
+    };
     
     request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
     request.send(null);
