@@ -9,13 +9,14 @@ b.onclick = function()
     
     request.onreadystatechange = function()
     {
-        
+         s = document.getElementById('s');
+                s.innerHTML = request.readystate
 
         if(request.readystate == XMLHttpRequest.DONE)
         {
             
             s = document.getElementById('s');
-                s.innerHTML = 'hello'
+                s.innerHTML = request.readystate
         
         //   if(request.status == 200)
         //     {
