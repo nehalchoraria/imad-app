@@ -10,21 +10,21 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var aritleone = { title:'Article One',
+var articleone = { title:'Article One',
 heading : 'Article One ',
 date : '13 August 2017',
 content : `<p> This is article one. This is article one. This is article one. This is article one. This is article one. This is        article one. This is article one. This is article one. 
         </p> `
 };
 
-var aritletwo = { title:'Article One',
+var articletwo = { title:'Article One',
 heading : 'Article Two ',
 date : '11 August 2017',
 content : `<p> This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. 
         </p> `
 };
 
-var aritlethree = { title:'Article Three',
+var articlethree = { title:'Article Three',
 heading : 'Article Three ',
 date : '12 August 2017',
 content : `<p> This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. 
