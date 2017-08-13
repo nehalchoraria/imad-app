@@ -10,8 +10,51 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var content = { title:'Article One',
+heading : 'Article One ',
+date : '13 August 2017',
+content : `<p> This is article one. This is article one. This is article one. This is article one. This is article one. This is        article one. This is article one. This is article one. 
+        </p> `
+};
+
+
+function htmlbody(data)
+{
+    title = data.title ;
+    heading = data.heading ;
+    date = data.date;
+    content = data.content;
+    
+   html = ` <html>
+    <head> 
+        <Title> $title </Title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+        
+    <body>
+        <div class = "Bar">
+        <a href = "/" style =" padding-right : 50px" > Home </a> 
+        <a href = "/article_one"> $heading </a>
+        <hr> <br>
+        </div>
+    
+        <div class = "Container">
+        <h2> $heading </h2>
+        <p> $date </p>
+        <p> $content </p>
+        </div>
+    </body>
+    
+</html> `
+
+    return html ;
+    
+}
+
+
 app.get('/article_one' , function(req,res){
-    res.sendFile(path.join(__dirname,'ui','article_one.html'))
+    res.send(htmlbody(content))
 });
 
 app.get('/ui/style.css', function (req, res) {
