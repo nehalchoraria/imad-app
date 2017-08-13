@@ -1,5 +1,6 @@
 
 button = document.getElementById('buttontoclick');
+
 var span =  document.getElementById('value')
 
 counter = 0 ;
@@ -7,6 +8,7 @@ counter = 0 ;
 button.onClick = function()
 {
   counter = coutner + 1 ;
+  alert("Hi");
   span.innerHTML = counter.toString();
 };
 
