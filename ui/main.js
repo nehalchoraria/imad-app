@@ -1,11 +1,10 @@
 
-button = document.getElementById('buttontoclick');
+button = document.getElementById('b');
 counter = 0 ;
 
 button.onClick = function()
 {
   counter = coutner + 1 ;
-  span.innerHTML = counter.toString();
 };
 
 // console.log('Loaded!');
