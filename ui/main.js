@@ -7,7 +7,7 @@ margin = 0 ;
 function Move()
 {
     margin = margin + 10 ; 
-    img.style.marginLeft = margin + 'px' ; 
+    img.style.paddingLeft = margin + 'px' ; 
 }
 
 img.onclick =  function()
