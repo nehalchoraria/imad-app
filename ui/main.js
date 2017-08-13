@@ -10,7 +10,6 @@ button.onClick = function()
   span.innerHTML = counter.toString();
 };
 
-
 // console.log('Loaded!');
 
 // img = document.getElementById('madi');
