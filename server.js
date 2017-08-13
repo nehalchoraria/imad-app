@@ -49,7 +49,9 @@ function htmlbody(data)
     <body>
         <div class = "Bar">
         <a href = "/" style =" padding-right : 50px" > Home </a> 
-        <a href = "/article_one"> ${heading} </a>
+        <a href = "/article_one" style =" padding-right : 50px" > ArticleOne </a>
+        <a href = "/article_two" style =" padding-right : 50px" > ArticleTwo </a>
+        <a href = "/article_three" style =" padding-right : 50px" > ArticleThree </a>
         <hr> <br>
         </div>
     
