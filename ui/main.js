@@ -12,7 +12,7 @@ function Move()
 
 img.onclick =  function()
 {
-    setInterval(Move,100) ; 
+    setInterval(Move,10) ; 
 };
 
 //img.onclick = alert('Hi') ;
