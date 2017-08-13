@@ -35,14 +35,14 @@ function htmlbody(data)
     <body>
         <div class = "Bar">
         <a href = "/" style =" padding-right : 50px" > Home </a> 
-        <a href = "/article_one"> $heading </a>
+        <a href = "/article_one"> ${heading} </a>
         <hr> <br>
         </div>
     
         <div class = "Container">
-        <h2> $heading </h2>
-        <p> $date </p>
-        <p> $content </p>
+        <h2> ${heading} </h2>
+        <p> ${date} </p>
+        <p> ${content} </p>
         </div>
     </body>
     
