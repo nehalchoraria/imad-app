@@ -2,7 +2,7 @@
 button = document.getElementById('buttontoclick');
 counter = 0 ;
 
-  alert("Hi");
+alert("Hi");
 
 button.onClick = function()
 {
