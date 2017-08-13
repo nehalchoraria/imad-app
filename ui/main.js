@@ -13,8 +13,7 @@ b.onclick = function()
           if(request.status == 200)
             {
                 var counter = request.resposneText;
-                s = document.getElementById('s');
-                console.log(counter);
+                var s = document.getElementById('s');
                 s.innerHTML = counter.toString();
             }
         }
