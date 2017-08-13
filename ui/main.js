@@ -14,7 +14,7 @@ b.onclick = function()
                 var coutner = request.resposneText
                 alert('hi')
                 sp = document.getElementById('s');
-                span.innerHTML = counter.toString();
+                sp.innerHTML = counter.toString();
             }
         }
     }
