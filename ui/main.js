@@ -1,8 +1,14 @@
 console.log('Loaded!');
 
 img = document.getElementById('madi');
-img.onclick = function()
+
+margin = 0 ;
+
+x = function()
 {
-    img.style.margin = '10px'
+    margin = margin + 10 ; 
+    img.style.marginLeft = margin + 'px' ; 
 };
+
+img.onclick = setIntervel(x,100)
 
