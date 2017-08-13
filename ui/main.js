@@ -12,7 +12,7 @@ b.onclick = function()
          s = document.getElementById('s');
                 s.innerHTML = request.readystate
 
-        if(request.readystate == XMLHttpRequest.DONE)
+        if(request.readyState == XMLHttpRequest.DONE)
         {
             
             s = document.getElementById('s');
