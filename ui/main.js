@@ -9,7 +9,7 @@ b.onclick = function()
   
     request.onreadystatechange = function()
     {
-        if(request.readystate === XMLHTTPRequest.DONE)
+        if(request.readystate === XMLHttpRequest.DONE)
         {
             if(request.status === 200)
             {
