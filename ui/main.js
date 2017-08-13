@@ -13,7 +13,7 @@ b.onclick = function()
                 counter = request.resposneText
                 alert('ho')
                 sp = document.getElementById('s');
-                sp.innerHTML = counter.toString();
+                sp.innerHTML = counter+"";
             }
         
     }
