@@ -3,7 +3,7 @@ b = document.getElementById('b');
 
 b.onclick = function()
 {
-    var request = new XMLHTTPRequest();
+    var request = new XMLHttpRequest();
   
     request.onreadystatechange = function()
     {
