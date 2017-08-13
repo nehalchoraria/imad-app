@@ -13,7 +13,7 @@ b.onclick = function()
             {
                 var coutner = request.resposneText
                 alert('hi')
-                var sp = document.getElementById('s');
+                sp = document.getElementById('s');
                 span.innerHTML = counter.toString();
             }
         }
