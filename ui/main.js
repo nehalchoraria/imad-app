@@ -14,9 +14,9 @@ b.onclick = function()
            if(request.status === 200)
             {
                 var counter = request.resposneText;
-                sp = document.getElementById('s');
+                s = document.getElementById('s');
                 console.log(counter)
-                sp.innerHTML = 'hello'
+                s.innerHTML = 'hello'
             }
         }
     };
