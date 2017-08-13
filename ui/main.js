@@ -4,13 +4,13 @@ img = document.getElementById('madi');
 
 margin = 0 ;
 
-x = function()
+function Move()
 {
     margin = margin + 10 ; 
     img.style.marginLeft = margin + 'px' ; 
-};
+}
 
-img.onclick =  function f()
+img.onclick =  function()
 {
-    setInterval(x,100) ; 
+    setInterval(Move,100) ; 
 };
