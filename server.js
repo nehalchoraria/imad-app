@@ -12,10 +12,10 @@ app.get('/', function (req, res) {
 
 var articles = {
     articleone : { title:'Article One',
-heading : 'Article One ',
-date : '13 August 2017',
-content : `<p> This is article one. This is article one. This is article one. This is article one. This is article one. This is        article one. This is article one. This is article one. 
-        </p> `
+    heading : 'Article One ',
+    date : '13 August 2017',
+    content : `<p> This is article one. This is article one. This is article one. This is article one. This is article one. This is        article one. This is article one. This is article one. 
+            </p> `
 },
     articletwo : { title:'Article One',
     heading : 'Article Two ',
@@ -69,8 +69,8 @@ function htmlbody(data)
 
 
 app.get('/:articlename' , function(req,res){
-    articlename = req.params.articlename;
-    res.send(htmlbody(articles[articlename]));
+    name = req.params.articlename;
+    res.send(htmlbody(articles[name]));
 });
 
 
