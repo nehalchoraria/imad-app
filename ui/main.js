@@ -7,14 +7,12 @@ margin = 0 ;
 function MoveRight()
 {
     margin = margin + 5 ; 
-    img.style.marginLeft = '0px'
     img.style.marginRight = margin + 'px' ; 
 }
 
 function MoveLeft()
 {
     margin = margin - 5 ;
-    img.style.marginRight = '0px'
     img.style.marginLeft = margin + 'px' ; 
 }
 
