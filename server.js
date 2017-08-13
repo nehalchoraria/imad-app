@@ -11,19 +11,19 @@ app.get('/', function (req, res) {
 });
 
 var articles = {
-    'articleone' : { title:'Article One',
+    'article_one' : { title:'Article One',
     heading : 'Article One ',
     date : '13 August 2017',
     content : `<p> This is article one. This is article one. This is article one. This is article one. This is article one. This is        article one. This is article one. This is article one. 
             </p> `
 },
-    'articletwo' : { title:'Article One',
+    'article_two' : { title:'Article One',
     heading : 'Article Two ',
     date : '11 August 2017',
     content : `<p> This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. This is article two. 
             </p> `
 },
-    'articlethree' : { title:'Article Three',
+    'article_three' : { title:'Article Three',
 heading : 'Article Three ',
 date : '12 August 2017',
 content : `<p> This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. This is article three. 
