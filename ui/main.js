@@ -12,7 +12,7 @@ b.onclick = function()
             console.log(request.status.toString())
            if(request.status === 200)
             {
-                coutner = request.resposneText
+                counter = request.resposneText
                 sp = document.getElementById('s');
                 sp.innerHTML = counter.toString();
             }
