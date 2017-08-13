@@ -15,4 +15,4 @@ function Move()
 //     setInterval(Move,100) ; 
 // };
 
-img.onclick = setAlert('Hi')
+img.onclick = alert('Hi') ;
