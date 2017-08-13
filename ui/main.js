@@ -7,8 +7,7 @@ b.onclick = function()
   
     request.onreadystatechange = function()
     {
-        if(request.readystate === XMLHttpRequest.DONE)
-        {
+        
            if(request.status === 200)
             {
                 counter = request.resposneText
@@ -16,7 +15,7 @@ b.onclick = function()
                 sp = document.getElementById('s');
                 sp.innerHTML = counter.toString();
             }
-        }
+        
     }
     
     request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
