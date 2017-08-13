@@ -1,13 +1,14 @@
 
 var button = document.getElementById('counter');
+var span =  document.getElementById('value')
 
-button.onclick() = function()
+counter = 0 ;
+
+button.onClick = function()
 {
-    
+  counter = coutner + 1 ;
+  span.innerHTML = counter+"";
 };
-
-
-
 
 
 
