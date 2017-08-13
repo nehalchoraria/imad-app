@@ -1,13 +1,28 @@
 
 b = document.getElementById('b');
-sp = document.getElementById('s');
 
 counter = 0 ;
 
 b.onclick = function()
 {
-  counter = counter + 1 ;
-  s.innerHTML = counter.toString();
+    var request = new XMLHTTPRequest();
+  
+    request.onreadystatechange = function()
+    {
+        if(request.readystate === XMLHTTPRequest.DONE)
+        {
+            if(request.status === 200)
+            {
+                var coutner = request.resposneText
+                var sp = document.getElementById('s');
+                span.innerHTML = counter.toString();
+            }
+        }
+    }
+    
+    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
+    request.send(null);
+    
 };
 
 // console.log('Loaded!');
