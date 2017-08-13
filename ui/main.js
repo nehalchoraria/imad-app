@@ -25,7 +25,7 @@ img.onclick =  function()
     
     
     if (counter%2==0)
-    setInterval(MoveRight,100) ; 
+    setInterval(MoveRight,50) ; 
     else
     setInterval(MoveLeft,50) ; 
 };
