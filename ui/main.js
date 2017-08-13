@@ -11,20 +11,6 @@ button.onClick = function()
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // console.log('Loaded!');
 
 // img = document.getElementById('madi');
