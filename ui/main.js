@@ -1,5 +1,5 @@
 
-button = document.getElementById('counter');
+button = document.getElementById('buttontoclick');
 var span =  document.getElementById('value')
 
 counter = 0 ;
