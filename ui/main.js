@@ -10,4 +10,7 @@ x = function()
     img.style.marginLeft = margin + 'px' ; 
 };
 
-img.onclick =  setInterval(x,100) ; 
+img.onclick =  function f()
+{
+    setInterval(x,100) ; 
+};
