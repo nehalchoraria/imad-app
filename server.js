@@ -55,7 +55,7 @@ function htmlbody(data)
         <hr> <br>
         </div>
     
-        <div class = "Container" style = " margin : 20px ">
+        <div class = "Container">
         <h2> ${heading} </h2>
         <p> ${date} </p>
         <p> ${content} </p>
