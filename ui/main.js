@@ -9,16 +9,18 @@ b.onclick = function()
     
     request.onreadystatechange = function()
     {
-        if(request.readystate == XMLHttpRequest.DONE)
-        {
-           if(request.status == 200)
-            {
-                var counter = request.resposneText;
-                s = document.getElementById('s');
-                console.log(counter)
-                s.innerHTML = 'hello'
-            }
-        }
+                        s.innerHTML = 'hello'
+
+        // if(request.readystate == XMLHttpRequest.DONE)
+        // {
+        //   if(request.status == 200)
+        //     {
+        //         var counter = request.resposneText;
+        //         s = document.getElementById('s');
+        //         console.log(counter)
+        //         s.innerHTML = 'hello'
+        //     }
+        // }
     };
     
 };
