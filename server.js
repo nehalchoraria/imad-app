@@ -69,7 +69,8 @@ function htmlbody(data)
 
 
 app.get('/:articlename' , function(req,res){
-    res.send(htmlbody(articles[articlename]))
+    articlename = req.params.articlename;
+    res.send(htmlbody(articles[articlename]));
 });
 
 
