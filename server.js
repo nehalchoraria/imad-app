@@ -79,6 +79,14 @@ app.get('/:articlename' , function(req,res){
     res.send(htmlbody(articles[articlename]));
 });
 
+var names = []
+app.get('/submit-name/:name' , function(req,res){
+    
+    var name = req.params.name ;
+    names.push(name);
+    res.send(JSON.stringify(names))
+
+});
 
 
 app.get('/ui/style.css', function (req, res) {
