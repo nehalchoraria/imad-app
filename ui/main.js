@@ -20,26 +20,46 @@ b.onclick = function()
         }
     };
     
-     request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
+    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
     request.send(null);
     
    
     
 };
 
- var people = document.getElementById('people');
-    people.onclick = function()
+ var submit = document.getElementById('submit');
+ var nameInput = document.getElementById('name');
+ var n = nameInput.value;
+ 
+ 
+submit.onclick = function()
     {
-        var names = ['Person1','Person2','Person3'];
-        ol = document.getElementById('list');
-        list = '';
-        
-        for ( i=0 ; i<names.length ; i++)
+    var request = new XMLHttpRequest();
+   
+    request.onreadystatechange = function()
+    {
+        if(request.readyState == XMLHttpRequest.DONE)
         {
-            list = list+'<li>'+names[i]+'</li>';
-        }
         
-        ol.innerHTML = list;
+          if(request.status == 200)
+            {
+                var names = request.responseText;
+                names = JSON.parse(names);
+                ol = document.getElementById('list');
+                list = '';
+                
+                for ( i=0 ; i<names.length ; i++)
+                {
+                    list = list+'<li>'+names[i]+'</li>';
+                }
+                
+                ol.innerHTML = list;
+            }
+        }
+    };
+        
+    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/submit-name/'+n,true);
+    request.send(null);
         
     }
 
