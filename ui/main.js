@@ -23,6 +23,7 @@ b.onclick = function()
      request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
     request.send(null);
     
+
     
 };
 
