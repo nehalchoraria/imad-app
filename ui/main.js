@@ -28,8 +28,7 @@ b.onclick = function()
 };
 
  var submit = document.getElementById('submit');
- var nameInput = document.getElementById('name');
- var n = nameInput.value;
+
  
  
 submit.onclick = function()
@@ -43,6 +42,7 @@ submit.onclick = function()
         
           if(request.status == 200)
             {
+                
                 var names = request.responseText;
                 names = JSON.parse(names);
                 ol = document.getElementById('list');
@@ -58,6 +58,9 @@ submit.onclick = function()
         }
     };
     console.log(n)
+     var nameInput = document.getElementById('name');
+     var n = nameInput.value;
+     
     request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/submit-name/'+n,true);
     request.send(null);
         
