@@ -35,7 +35,7 @@ b.onclick = function()
             list = list+'<li>'+names[i]+'</li>';
         }
         
-        ol.InnerHTML = list;
+        ol.innerHTML = list;
         
     }
     
