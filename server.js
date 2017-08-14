@@ -73,12 +73,6 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-
-app.get('/:articlename' , function(req,res){
-    articlename = req.params.articlename;
-    res.send(htmlbody(articles[articlename]));
-});
-
 var names = []
 app.get('/submit-name/:name' , function(req,res){
     
@@ -87,6 +81,14 @@ app.get('/submit-name/:name' , function(req,res){
     res.send(JSON.stringify(names))
 
 });
+
+
+app.get('/:articlename' , function(req,res){
+    articlename = req.params.articlename;
+    res.send(htmlbody(articles[articlename]));
+});
+
+
 
 
 app.get('/ui/style.css', function (req, res) {
