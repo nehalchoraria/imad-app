@@ -23,7 +23,21 @@ b.onclick = function()
      request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/counter',true);
     request.send(null);
     
-
+    var people = document.getElementById('people');
+    people.onclick = function()
+    {
+        var names = ['Person1','Person2','Person3'];
+        ol = document.getElementById('list');
+        list = '';
+        
+        for ( i=0 ; i<names.length ; i++)
+        {
+            list = list+'<li>'+names[i]+'</li>';
+        }
+        
+        ol.InnerHTML = list;
+        
+    }
     
 };
 
