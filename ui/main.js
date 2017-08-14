@@ -57,7 +57,7 @@ submit.onclick = function()
             }
         }
     };
-        
+    console.log(n)
     request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/submit-name/'+n,true);
     request.send(null);
         
