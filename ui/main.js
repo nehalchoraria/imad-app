@@ -67,7 +67,7 @@ submit.onclick = function()
         
     }
     
-var submit = document.getElementById('comment');
+var comment = document.getElementById('commentsubmit');
 
 comment.onclick = function ()
 {
