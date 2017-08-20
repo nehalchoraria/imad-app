@@ -73,8 +73,6 @@ comment.onclick = function ()
 {
     var request = new XMLHttpRequest();
     
-    
-   
     request.onreadystatechange = function()
     {
         if(request.readyState == XMLHttpRequest.DONE)
@@ -100,7 +98,7 @@ comment.onclick = function ()
     };
     
     var c = document.getElementById('comment');
-    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/comments?com='+c,true);
+    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/comments?com=nehal',true);
     
     
 };
