@@ -83,7 +83,7 @@ comment.onclick = function ()
             {
                 
                 var com = request.responseText;
-                com = JSON.parse(names);
+                com = JSON.parse(com);
                 ol = document.getElementById('list');
                 list = '';
                 
