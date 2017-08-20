@@ -73,12 +73,13 @@ comment.onclick = function ()
 {
     var request = new XMLHttpRequest();
     
-    alert("in");
+    
    
     request.onreadystatechange = function()
     {
         if(request.readyState == XMLHttpRequest.DONE)
         {
+            alert("in");
         
           if(request.status == 200)
             {
