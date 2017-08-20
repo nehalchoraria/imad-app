@@ -71,7 +71,35 @@ var comment = document.getElementById('commentsubmit');
 
 comment.onclick = function ()
 {
-    alert("WOkring");
+    var request = new XMLHttpRequest();
+   
+    request.onreadystatechange = function()
+    {
+        if(request.readyState == XMLHttpRequest.DONE)
+        {
+        
+          if(request.status == 200)
+            {
+                
+                var com = request.responseText;
+                com = JSON.parse(names);
+                ol = document.getElementById('list');
+                list = '';
+                
+                for ( i=0 ; i<com.length ; i++)
+                {
+                    list = list+'<li>'+com[i]+'</li>';
+                }
+                
+                ol.innerHTML = list;
+            }
+        }
+    };
+    
+    var c = document.getElementById('comment');
+    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/comments?com='+c,true);
+    
+    
 };
 
 // console.log('Loaded!');
