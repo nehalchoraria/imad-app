@@ -82,7 +82,7 @@ app.get('/submit-name/:name' , function(req,res){
 
 });
 
-var com[];
+var com = [];
 app.get('/comments' , function(req,res)
 {
     var n = req.params.com;
