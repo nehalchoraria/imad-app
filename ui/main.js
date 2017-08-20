@@ -98,7 +98,7 @@ comment.onclick = function ()
     };
     
     var c = document.getElementById('comment');
-    alert(c.value);
+    alert(c);
     request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/comments?com='+c,true);
     request.send(null);
     
