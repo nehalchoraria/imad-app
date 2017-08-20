@@ -98,8 +98,8 @@ comment.onclick = function ()
     };
     
     var c = document.getElementById('comment');
-    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/comments?com=nehal',true);
-    
+    request.open('GET','http://nehalchoraria0987.imad.hasura-app.io/comments?com='+c,true);
+    request.send(null);
     
 };
 
