@@ -72,6 +72,8 @@ var comment = document.getElementById('commentsubmit');
 comment.onclick = function ()
 {
     var request = new XMLHttpRequest();
+    
+    alert("in");
    
     request.onreadystatechange = function()
     {
