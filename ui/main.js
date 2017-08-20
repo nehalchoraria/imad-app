@@ -66,6 +66,13 @@ submit.onclick = function()
     request.send(null);
         
     }
+    
+var submit = document.getElementById('comment');
+
+comment.onclick = function ()
+{
+    alert("WOkring");
+};
 
 // console.log('Loaded!');
 
