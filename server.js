@@ -82,6 +82,14 @@ app.get('/submit-name/:name' , function(req,res){
 
 });
 
+var com[];
+app.get('/comments' , function(req,res)
+{
+    var name = req.query.com;
+    com.push(name);
+    res.send(JSON.stringify(con))
+});
+
 
 app.get('/:articlename' , function(req,res){
     articlename = req.params.articlename;
