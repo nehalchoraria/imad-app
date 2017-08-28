@@ -95,7 +95,8 @@ app.get('/comments' , function(reqt,res)
 
 app.get('/hash/:input',function(req,res)
 {
-    var h = hash(req.params.input,'this-is-something-big-and-better')
+    var salt = crypto.getRandomBytes(128).toString();
+    var h = hash(req.params.input,salt);
     res.send(h)
     
 });
