@@ -95,14 +95,14 @@ app.get('/comments' , function(reqt,res)
 
 app.get('/hash/:input',function(req,res)
 {
-    var h = hash(req.params.input,'ab')
+    var h = hash(req.params.input,'abcde')
     res.send(h)
     
 });
 
 function hash(plaintext,salt)
 {
-    var hashed = crypto.pbkdf2Sync(plaintext,salt, 100000, 3, 'sha512');
+    var hashed = crypto.pbkdf2Sync(plaintext,salt, 100000, 1, 'sha512');
     return hashed.toString('hex');
 }
 
