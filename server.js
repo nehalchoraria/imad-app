@@ -95,7 +95,7 @@ app.get('/comments' , function(reqt,res)
 
 app.get('/hash/:input',function(req,res)
 {
-    var h = hash(req.params.input,'abcde')
+    var h = hash(req.params.input,'this-is-something-big-and-better')
     res.send(h)
     
 });
