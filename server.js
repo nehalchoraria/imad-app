@@ -103,7 +103,7 @@ app.get('/hash/:input',function(req,res)
 function hash(plaintext,salt)
 {
     var hashed = crypto.pbkdf2Sync(plaintext,salt, 100000, 512, 'sha512');
-    return hashed;
+    return hashed.toString();
 }
 
 
