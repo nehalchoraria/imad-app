@@ -110,7 +110,7 @@ function hash(plaintext,salt)
 }
 
 
-app.post('/newuser' , function(req,res) 
+app.get('/newuser' , function(req,res) 
 {
     
     var username = req.body.username;
