@@ -91,11 +91,7 @@ app.get('/comments' , function(reqt,res)
     res.send(JSON.stringify(com))
 });
 
-function hash(plaintext,salt)
-{
-    var hashed = crypto.pbkdf2(plaintext,salt, 100000, 512, 'sha512');
-    return hashed;
-}
+
 
 app.get('/hash/:input',function(req,res)
 {
@@ -103,6 +99,12 @@ app.get('/hash/:input',function(req,res)
     res.send(hash)
     
 });
+
+function hash(plaintext,salt)
+{
+    var hashed = crypto.pbkdf2(plaintext,salt, 100000, 512, 'sha512');
+    return hashed;
+}
 
 
 app.get('/:articlename' , function(req,res){
